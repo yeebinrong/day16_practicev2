@@ -1,0 +1,8 @@
+<p>cart-cmp works!</p>
+<ng-container *ngFor="let item of cart">
+    <mat-card (click)="onClick(item.id)">
+        <p>{{item.id}}</p>
+        <p>{{item.name}}</p>
+        <p>{{item.quantity}}</p>
+    </mat-card>
+</ng-container>
